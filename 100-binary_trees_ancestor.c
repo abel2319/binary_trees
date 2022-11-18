@@ -11,7 +11,7 @@ int depth_node(const binary_tree_t *tree)
 {
 	int dep = 0;
 
-	while (tree != NULL)
+	while (tree->parent != NULL)
 	{
 		dep++;
 		tree = tree->parent;
