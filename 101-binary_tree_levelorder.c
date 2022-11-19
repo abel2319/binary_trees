@@ -39,10 +39,10 @@ void print_level(const binary_tree_t *tree, int level, void (*func)(int))
 		print_level(tree->right, level - 1, func);
 	}
 }
-	
+
 /**
- * binary_tree_inorder - function that goes through a
- * binary tree using in-order traversal
+ * binary_tree_levelorder - function that goes through a
+ * binary tree using level-order traversal
  *
  * @tree: pointer to the root node of the tree to traverse
  * @func: pointer to a function to call for each node.
